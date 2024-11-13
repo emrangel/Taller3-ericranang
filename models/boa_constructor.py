@@ -5,11 +5,6 @@ class Boa_Constructor(animal_exotico.Animal_Exotico):
     def __init__(self, nombre: str, peso: float, edad: int, pais_origen: str, impuestos: float) -> None:
         super().__init__(nombre, peso, edad, pais_origen, impuestos)
         self.ratones_comidos = 0  # Inicializamos a 0
-
-    # Getter para ratones_comidos
-    # @property
-    # def ratones_comidos(self) -> int:
-    #     return self._ratones_comidos
     
     @property
     def ratones_comidos(self) -> int:

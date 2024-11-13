@@ -11,9 +11,9 @@ class TestUser(unittest.TestCase):
         boas = boa_constructor.Boa_Constructor("Boa Constructor", 12.5, 5, "Brasil", 10.0)
         self.assertEqual(boas.hacer_sonido(), "¡Tsss!")
 
-    # def test_flete_huron(self):
-    #     huron = huron.Huron("Hurón", 1.5, 2, "Canadá", 5.0)
-    #     self.assertEqual(huron.calcular_flete, 7.5)
+    def test_flete_huron(self):
+        huron = huron.Huron("Hurón", 1.5, 2, "Canadá", 5.0)
+        self.assertEqual(huron.calcular_flete(), 7.5)
 
     def test_flete_boa(self):
         boa = boa_constructor.Boa_Constructor("Boa Constructor", 12.5, 5, "Brasil", 10.0)
